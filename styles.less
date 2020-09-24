@@ -1,0 +1,310 @@
+// compress: false
+@tablet-width:660px;
+@desktop-width:1200px;
+@bg-color:#283645;
+
+
+li,a{
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    font-family:'Open Sans', sans-serif;
+}
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+.header-background{
+    background-image: url(img/back-mobile@1x.jpg);
+    width: 100%;
+    height: 462px;
+    background-position: top center;
+}
+.page-header{
+    padding: 0;
+    margin: 0;
+    height: 66px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba( 0, 0, 0, 30%);
+}
+.page-header__desktop{
+    display: none;
+}
+.page-header__logo{
+    color: white;
+}
+.page-header__menu{
+    color: white;
+}
+
+.main-nav{
+    width: 100%;
+    height: 325px;
+    padding: 0;
+    margin: 0;
+    background-color: #283645;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    display: none;
+}
+.main-nav__item{
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.main-nav__line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.f12{
+    display: none;
+}
+.intro{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 271px;
+    background-color: #1d2631;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.intro-header{
+    display: none;
+}
+.intro-download{
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    margin: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.intro-availability{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+@media(min-width:@tablet-width){
+    body{
+        background-color: rgb(83, 83, 83);
+        margin: 0;
+        padding: 0;
+    }
+    .header-background{
+        background-image: url(img/back-tablet@1x.jpg);
+        width: 100%;
+        height: 729px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .page-header{
+        padding: 0;
+        margin: 0;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba( 0, 0, 0, 30%);
+    }
+    .page-header__logo{
+        color: white;
+    }
+    .page-header__menu{
+        color: white;
+    }
+    
+    .main-nav{
+        width: 100%;
+        height: 325px;
+        padding: 0;
+        margin: 0;
+        background-color: #283645;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        display: none;
+    }
+    .main-nav__item{
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+    .main-nav__line{
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+    .f12{
+        width: 300px;
+        height: 619px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .intro{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 271px;
+        background-color: #1d2631;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        display: none;
+    }
+    .intro-header{
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-size: 40px;
+        line-height: auto;
+        color: #ffffff;
+    }
+    .intro-download{
+        font-size: 18px;
+        line-height: 18px;
+        color: white;
+        border: 3px solid white;
+        padding: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .intro-availability{
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+    }
+}
+@media(min-width:@desktop-width){
+    body{
+        background-color: rgb(83, 83, 83);
+        margin: 0;
+        padding: 0;
+    }
+    .header-background{
+        background-image: url(img/back-desktop@1x.jpg);
+        width: 100%;
+        height: 853px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .page-header{
+        padding: 0;
+        margin: 0;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba( 0, 0, 0, 30%);
+        display: none;
+    }
+    .page-header__desktop{
+        padding: 0;
+        margin: 0;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba( 0, 0, 0, 30%);
+    }
+    .page-header__logo{
+        color: white;
+    }
+    .page-header__menu{
+        color: white;
+    }
+    
+    .main-nav{
+        width: 100%;
+        height: 325px;
+        padding: 0;
+        margin: 0;
+        background-color: #283645;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        display: none;
+    }
+    .main-nav__item{
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: none;
+        color: #ffffff;
+    }
+    .main-nav__line{
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+    .f12{
+        width: 300px;
+        height: 619px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .intro{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 271px;
+        background-color: #1d2631;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        display: none;
+    }
+    .intro-header{
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-size: 40px;
+        line-height: auto;
+        color: #ffffff;
+    }
+    .intro-download{
+        font-size: 18px;
+        line-height: 18px;
+        color: white;
+        border: 3px solid white;
+        padding: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .intro-availability{
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+    }
+}
+

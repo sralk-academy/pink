@@ -14,47 +14,51 @@
         <header class="page-header">
             <a class="page-header__logo" href="#"> ЛОГО свг
             </a>
-            <a class="page-header__menu" href="#"> МЕНЮ свг
+            <a class="page-header__menu" href="#">
             </a>
         </header>
 
         <header class="page-header__desktop">
             <a class="page-header__desktop-logo" href="#"> ЛОГОТИП свг
             </a>
-            <a class="main-nav__item" href="#"> Главная
-            </a>
-            <a class="main-nav__item" href="#"> Фотографии
-            </a>
-            <a class="main-nav__item" href="#"> Конкурс
-            </a>
-            <a class="main-nav__item" href="#"> HTML Academy
-            </a>
+            <li class="main-nav__item">
+                <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+            </li>
         </header>
 
         <nav class="main-nav">
             <div class="page-header">
                 <a class="page-header__logo" href="#"> ЛОГО свг
                 </a>
-                <a class="page-header__exit" href="#"> EXIT cвг
+                <a class="page-header__exit" href="#">
+                </a>
             </div>
-            <li class="main-nav__item">
-                <a href="#">Главная</a>
-            </li>
-            <div class="main-nav__line"></div>
-            <li class="main-nav__item">
-                <a href="#">Фотографии</a>
-            </li>
-            <div class="main-nav__line"></div>
-            <li class="main-nav__item">
-                <a href="#">Конкурс</a>
-            </li>
-            <div class="main-nav__line"></div>
-            <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
-            </li>
-            <div class="main-nav__line"></div>
+
+
+                <li class="main-nav__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">HTML Academy</a>
+                </li>
+
         </nav>
-        <div class="f12">
+        <div class="intro-desktop">
             <p class="intro-header">Вгляните на жизнь иначе!</p>
             <a class="intro-download" href="#">Скачать приложение</a>
             <div class="intro-image">
@@ -128,5 +132,18 @@
     <div class="contants-map">Карта</div>
 </footer>
 
+<script>
+    var menu = document.querySelector('.page-header__menu');
+    var mainNav = document.querySelector('.main-nav');
+    var exit = document.querySelector('.page-header__exit');
 
+    menu.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            mainNav.classList.add('main-nav-show');
+        });
+    exit.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            mainNav.classList.remove('main-nav-show');
+        });
+</script>
 </html>

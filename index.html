@@ -44,18 +44,18 @@
             </div>
 
 
-                <li class="main-nav__item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">HTML Academy</a>
-                </li>
+            <li class="main-nav__item">
+                <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+            </li>
 
         </nav>
         <div class="intro-desktop">
@@ -97,18 +97,27 @@
     <section class="information">
         <p class="information-hat">Устали от серости мегаполиса?
             Нам есть, что вам предложить!</p>
-        <p class="information-title"><b>Поднимает настроение</b></p>
-        <p class="information-text">Приложение позволит вам победить
-            осеннюю хандру и депрессию буквально в несколько кликов!
-        </p>
-        <p class="information-title"><b>Меняет мир вокруг</b></p>
-        <p class="information-text">Сделайте снимок и украсьте его
-            смайликом или текстовой подписью, чтобы усилить эффект
-        </p>
-        <p class="information-title"><b>Заводит новых друзей</b></p>
-        <p class="information-text">Ставьте лайки, комментируйте,
-            делитесь фотографиями с друзьями и заводите новых
-        </p>
+        <div class="information-rewiew">
+            <div class="information-wrapper">
+                <p class="information-title"><b>Поднимает настроение</b></p>
+                <p class="information-text">Приложение позволит вам победить
+                    осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+            </div>
+            <div class="information-wrapper">
+                <p class="information-title"><b>Меняет мир вокруг</b></p>
+                <p class="information-text">Сделайте снимок и украсьте его
+                    смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+            </div>
+            <div class="information-wrapper">
+                <p class="information-title"><b>Заводит новых друзей</b></p>
+                <p class="information-text">Ставьте лайки, комментируйте,
+                    делитесь фотографиями с друзьями и заводите новых
+                </p>
+            </div>
+        </div>
+        <img class="information-iphone" src="img/info-iphone.png">
     </section>
     <section class="rewiew">
         <p class="rewiew-title"><b>Николай Петров</b></p>
@@ -138,12 +147,13 @@
     var exit = document.querySelector('.page-header__exit');
 
     menu.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            mainNav.classList.add('main-nav-show');
-        });
+        evt.preventDefault();
+        mainNav.classList.add('main-nav-show');
+    });
     exit.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            mainNav.classList.remove('main-nav-show');
-        });
+        evt.preventDefault();
+        mainNav.classList.remove('main-nav-show');
+    });
 </script>
+
 </html>

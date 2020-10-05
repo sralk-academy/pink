@@ -1,49 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Pink</title>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <div class="header-background">
-        <header class="page-header">
-            <a class="page-header__logo" href="#"> ЛОГО свг
-            </a>
-            <a class="page-header__menu" href="#">
-            </a>
-        </header>
-
-        <header class="page-header__desktop">
-            <a class="page-header__desktop-logo" href="#"> ЛОГОТИП свг
-            </a>
-            <li class="main-nav__item">
-                <a href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
-            </li>
-        </header>
-
+    <header class="header-background">
         <nav class="main-nav">
-            <div class="page-header">
-                <a class="page-header__logo" href="#"> ЛОГО свг
-                </a>
-                <a class="page-header__exit" href="#">
-                </a>
-            </div>
-
-
+            <a class="main-nav__logo" href="#"> ЛОГОТИП свг
+            </a>
             <li class="main-nav__item">
                 <a href="#">Главная</a>
             </li>
@@ -56,10 +25,11 @@
             <li class="main-nav__item">
                 <a href="#">HTML Academy</a>
             </li>
-
         </nav>
-        <div class="intro-desktop">
-            <p class="intro-header">Вгляните на жизнь иначе!</p>
+
+        <section class="intro">
+            <div class="intro-media">
+            <p class="intro-header">Вгляните<br> на жизнь иначе!</p>
             <a class="intro-download" href="#">Скачать приложение</a>
             <div class="intro-image">
                 <a class="intro-image__apple" href="#"> свг аппл
@@ -69,96 +39,12 @@
                 <a class="intro-image__microsoft" href="#"> свг микрософт
                 </a>
             </div>
-            <p class="intro-availability">Доступно для iPhone, iPad, Android,
+            <p class="intro-availability">Доступно для iPhone, iPad, Android,<br>
                 Windows Phone, OS X, Windows 8
             </p>
         </div>
-    </div>
-
-
-    <section class="intro">
-        <p class="intro-header">Вгляните на жизнь иначе!</p>
-        <a class="intro-download" href="#">Скачать приложение</a>
-        <div class="intro-image">
-            <a class="intro-image__apple" href="#"> свг аппл
-            </a>
-            <a class="intro-image__android" href="#"> свг андроид
-            </a>
-            <a class="intro-image__microsoft" href="#"> свг микрософт
-            </a>
-        </div>
-        <p class="intro-availability">Доступно для iPhone, iPad, Android,
-            Windows Phone, OS X, Windows 8
-        </p>
-    </section>
-
-
-
-    <section class="information">
-        <p class="information-hat">Устали от серости мегаполиса?
-            Нам есть, что вам предложить!</p>
-            <div class="ffff">
-        <div class="information-rewiew">
-            <div class="information-wrapper">
-                <p class="information-title"><b>Поднимает настроение</b></p>
-                <p class="information-text">Приложение позволит вам победить
-                    осеннюю хандру и депрессию буквально в несколько кликов!
-                </p>
-            </div>
-            <div class="information-wrapper">
-                <p class="information-title"><b>Меняет мир вокруг</b></p>
-                <p class="information-text">Сделайте снимок и украсьте его
-                    смайликом или текстовой подписью, чтобы усилить эффект
-                </p>
-            </div>
-            <div class="information-wrapper">
-                <p class="information-title"><b>Заводит новых друзей</b></p>
-                <p class="information-text">Ставьте лайки, комментируйте,
-                    делитесь фотографиями с друзьями и заводите новых
-                </p>
-            </div>
-        </div>
-        <div class="information-iphone__wrapper">
-            <img class="information-iphone-mobile" src="img/info-iphone-mobile.png">
-            <img class="information-iphone-tablet" src="img/info-iphone-tablet.png">
-        </div>
-    </div>
-    </section>
-    <section class="rewiew">
-        <p class="rewiew-title"><b>Николай Петров</b></p>
-        <p class="rewiew-text">"Это приложение перевернуло мой мир
-            и позволило по-новому вглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в
-            комментариях к выложенной фотографии!"
-        </p>
-    </section>
-
-    <section class="price">PRICEPRICEPRICEPRICE</section>
+        </section>
+    </header>
 </body>
-<footer class="contants">
-    <p class="contacts-question">Остались вопросы? Свяжитесь с нами!</p>
-    <p class="contacts-title"><b>Звоните:</b></p>
-    <p class="contacts-text">+7(812)555-66-66</p>
-    <p class="contacts-title"><b>Пишите</b>:</p>
-    <p class="contacts-text">mail@htmlacademy.ru</p>
-    <p class="contacts-title"><b>Приезжайте в гости:</b></p>
-    <p class="contacts-text">ул. Большая Конюшенная, 19/8</p>
-    <div class="contants-map">Карта</div>
-</footer>
-
-<script>
-    var menu = document.querySelector('.page-header__menu');
-    var mainNav = document.querySelector('.main-nav');
-    var exit = document.querySelector('.page-header__exit');
-
-    menu.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mainNav.classList.add('main-nav-show');
-    });
-    exit.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mainNav.classList.remove('main-nav-show');
-    });
-</script>
 
 </html>

@@ -272,28 +272,19 @@ body{
     align-items: center;
 }
 .social-logo{
+    order: 2;
     width: 200px;
     height: 197px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.social-logo__pink{
-    width: 150px;
-    height: 40px;
-    background-image: url("img/pink.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    &.social-logo__pink:hover{
-        opacity: 30%;
-    }
-}
 .social-logo__twitter{
     width: 51px;
     height: 51px;
     border: 3px solid #e9ebec;
     border-radius: 50%;
-    background-image: url(img/twitter.svg);
+    background-image: url(img/footer/twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
     &.social-logo__twitter:hover{
@@ -309,7 +300,7 @@ body{
     height: 51px;
     border: 3px solid #e9ebec;
     border-radius: 50%;
-    background-image: url(img/facebook.svg);
+    background-image: url(img/footer/facebook.svg);
     background-repeat: no-repeat;
     background-position: center;
     &.social-logo__facebook:hover{
@@ -325,7 +316,7 @@ body{
     height: 51px;
     border: 3px solid #e9ebec;
     border-radius: 50%;
-    background-image: url(img/youtube.svg);
+    background-image: url(img/footer/youtube.svg);
     background-repeat: no-repeat;
     background-position: center;
     &.social-logo__youtube:hover{
@@ -336,17 +327,35 @@ body{
         }
     }
 }
-.social-html{
+.social-pink__logo{
+    order: 1;
+    width: 150px;
+    height: 40px;
+    background-image: url(img/footer/pink.svg);
+    &.social-pink__logo:hover{
+        opacity: 50%;
+    }
+}
+.social-html__logo{
+    order: 3;
     width: 150px;
     height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.social-html__text{
-    margin: 0;
-    padding: 0;
     font-size: 18px;
     line-height: 18px;
     color: #283645;
+    background-image: url(img/footer/html.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    &.social-html__logo:hover{
+        background-image: url(img/footer/htmlhover.svg);
+        &:active{
+            background-image: url(img/footer/htmlopacity.svg);
+        }
+    }
+}
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
 }

@@ -323,6 +323,7 @@ body{
     background-position: center;
     &.social-logo__twitter:hover{
         border: 3px solid #283645;
+        transition-duration: 0.2s;
         &:active{
             opacity: 30%;
             border: 3px solid rgba(40, 54, 69, 40%);
@@ -339,6 +340,7 @@ body{
     background-position: center;
     &.social-logo__facebook:hover{
         border: 3px solid #283645;
+        transition-duration: 0.2s;
         &:active{
             opacity: 30%;
             border: 3px solid rgba(40, 54, 69, 40%);
@@ -355,6 +357,7 @@ body{
     background-position: center;
     &.social-logo__youtube:hover{
         border: 3px solid #283645;
+        transition-duration: 0.2s;
         &:active{
             opacity: 30%;
             border: 3px solid rgba(40, 54, 69, 40%);
@@ -367,7 +370,11 @@ body{
     height: 40px;
     background-image: url(img/footer/pink.svg);
     &.social-pink__logo:hover{
-        opacity: 50%;
+        background-image: url(img/footer/pinkhover.svg);
+        transition-duration: 0.2s;
+        &:active{
+            background-image: url(img/footer/pinkopacity.svg);
+        }
     }
 }
 .social-html__logo{
@@ -384,6 +391,7 @@ body{
     align-items: center;
     &.social-html__logo:hover{
         background-image: url(img/footer/htmlhover.svg);
+        transition-duration: 0.2s;
         &:active{
             background-image: url(img/footer/htmlopacity.svg);
         }

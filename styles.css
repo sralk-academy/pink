@@ -314,6 +314,7 @@ body {
 }
 .social-logo__twitter.social-logo__twitter:hover {
   border: 3px solid #283645;
+  transition-duration: 0.2s;
 }
 .social-logo__twitter.social-logo__twitter:hover:active {
   opacity: 30%;
@@ -330,6 +331,7 @@ body {
 }
 .social-logo__facebook.social-logo__facebook:hover {
   border: 3px solid #283645;
+  transition-duration: 0.2s;
 }
 .social-logo__facebook.social-logo__facebook:hover:active {
   opacity: 30%;
@@ -346,6 +348,7 @@ body {
 }
 .social-logo__youtube.social-logo__youtube:hover {
   border: 3px solid #283645;
+  transition-duration: 0.2s;
 }
 .social-logo__youtube.social-logo__youtube:hover:active {
   opacity: 30%;
@@ -358,7 +361,11 @@ body {
   background-image: url(img/footer/pink.svg);
 }
 .social-pink__logo.social-pink__logo:hover {
-  opacity: 50%;
+  background-image: url(img/footer/pinkhover.svg);
+  transition-duration: 0.2s;
+}
+.social-pink__logo.social-pink__logo:hover:active {
+  background-image: url(img/footer/pinkopacity.svg);
 }
 .social-html__logo {
   order: 3;
@@ -375,6 +382,7 @@ body {
 }
 .social-html__logo.social-html__logo:hover {
   background-image: url(img/footer/htmlhover.svg);
+  transition-duration: 0.2s;
 }
 .social-html__logo.social-html__logo:hover:active {
   background-image: url(img/footer/htmlopacity.svg);

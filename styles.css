@@ -54,9 +54,6 @@ body {
   line-height: 32px;
   color: #ffffff;
 }
-.main-nav__item:hover {
-  border-bottom: 2px solid #ffffff;
-}
 .main-nav__item a:hover {
   color: #d22856;
 }
@@ -134,11 +131,6 @@ body {
 .intro-iphone__display.intro-iphone__display:hover {
   opacity: 0;
 }
-.information-media__background {
-  width: 100%;
-  height: 557px;
-  background-color: #f2f2f2;
-}
 .information-hat {
   width: 100%;
   height: 324px;
@@ -151,6 +143,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.information-media__background {
+  width: 100%;
+  height: 557px;
+  background-color: #f2f2f2;
 }
 .information-media {
   height: 557px;
@@ -190,7 +187,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  line-height: auto;
+  line-height: 30px;
   color: #283645;
 }
 .information-diagram__background {
